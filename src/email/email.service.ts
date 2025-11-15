@@ -28,7 +28,8 @@ export class EmailService {
             subject: `You have received an invitation`,
             greeting: `Good night`,
             senderName: `Trendies Team`,
-            signupUrl: 'http://localhost:3001/signup?email=' + encodeURIComponent(to) + '&refCode=' + encodeURIComponent(refCode),
+            // signupUrl: 'http://localhost:3001/signup?email=' + encodeURIComponent(to) + '&refCode=' + encodeURIComponent(refCode),
+            signupUrl: 'https://trendies-front-74y4tl7jz-babarfarooq123s-projects.vercel.app/signup?email=' + encodeURIComponent(to) + '&refCode=' + encodeURIComponent(refCode),
         };
         email.sender = { email: 'contact@trendiesmaroc.com', name: 'Trendies Team' };
 
